@@ -1,10 +1,28 @@
 GEM
   remote: http://rubygems.org/
   specs:
-    activesupport (3.0.8)
+    activesupport (8.0.5.2)
+      base64
+      benchmark (>= 0.3)
+      bigdecimal
+      concurrent-ruby (~> 1.0, >= 1.3.1)
+      connection_pool (>= 2.2.5)
+      drb
+      i18n (>= 1.6, < 2)
+      logger (>= 1.4.2)
+      minitest (>= 5.1)
+      securerandom (>= 0.3)
+      tzinfo (~> 2.0, >= 2.0.5)
+      uri (>= 0.13.1)
     addressable (2.3.5)
+    base64 (0.3.0)
+    benchmark (0.5.0)
+    bigdecimal (4.1.3)
     builder (3.2.2)
+    concurrent-ruby (1.3.8)
+    connection_pool (3.0.3)
     descendants_tracker (0.0.3)
+    drb (2.2.3)
     faraday (0.8.9)
       multipart-post (~> 1.2.0)
     git (1.2.6)
@@ -20,7 +38,8 @@ GEM
     highline (1.6.20)
     hpricot (0.8.4)
     httpauth (0.2.0)
-    i18n (0.5.0)
+    i18n (1.15.2)
+      concurrent-ruby (~> 1.0)
     jeweler (2.0.0)
       builder
       bundler (>= 1.0)
@@ -33,7 +52,11 @@ GEM
     json (1.8.1)
     jwt (0.1.10)
       multi_json (>= 1.5)
+    logger (1.7.0)
     mini_portile (0.5.2)
+    minitest (6.1.0)
+      drb (~> 2.0)
+      prism (>= 1.5, < 3)
     multi_json (1.8.4)
     multi_xml (0.5.5)
     multipart-post (1.2.0)
@@ -46,10 +69,15 @@ GEM
       multi_json (~> 1.0)
       multi_xml (~> 0.5)
       rack (~> 1.2)
+    prism (2.1.0)
     rack (1.5.2)
     rake (10.1.1)
     rdoc (4.1.1)
       json (~> 1.4)
+    securerandom (0.4.1)
+    tzinfo (2.0.6)
+      concurrent-ruby (~> 1.0)
+    uri (1.1.2)
 
 PLATFORMS
   ruby
